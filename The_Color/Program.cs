@@ -10,9 +10,9 @@ Goals:
 
 Color Constructor_Color = new Color(255, 38, 233);
 Color Static_Property_Color = Color.Yellow_Color;
-Console.WriteLine($ {})
+Console.WriteLine($"{Constructor_Color.red}");
+Console.WriteLine($"{Static_Property_Color}");
 
-//Console.WriteLine($"The static property color for yellow is
 
 
 public class Color
@@ -31,14 +31,14 @@ public class Color
 
     // based on pg. 171 - Static Properties 
     //Sets Color type to name and passes RGB setting to constructor
-    public static Color White_Color = new Color(255, 255, 255);
-    public static Color Black_Color = new Color(0, 0, 0);
-    public static Color Red_Color = new Color(255, 0, 0);
-    public static Color Orange_Color = new Color(255,165,0);
-    public static Color Yellow_Color = new Color(255,255,0);
-    public static Color Green_Color = new Color(0,128,0);
-    public static Color Blue_Color = new Color(0,0,255);
-    public static Color Purple_Color  = new Color(128,0,128);
+    public static Color White_Color { get;  } = new Color(255, 255, 255);
+    public static Color Black_Color { get; } = new Color(0, 0, 0);
+    public static Color Red_Color { get; } = new Color(255, 0, 0);
+    public static Color Orange_Color { get; } = new Color(255,165,0);
+    public static Color Yellow_Color { get; } = new Color(255,255,0);
+    public static Color Green_Color { get; } = new Color(0,128,0);
+    public static Color Blue_Color { get; } = new Color(0,0,255);
+    public static Color Purple_Color { get; } = new Color(128,0,128);
     
 
 }
